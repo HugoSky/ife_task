@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>task_1_10</title>
+    <style>
+	    body{
+	    	padding: 0px;
+	    	margin: 0px;
+	    }
+	    @media (min-width:641px ) {
+	    	.flex-container {
+			    display: flex;
+			    flex-flow: row wrap;
+			    justify-content:space-between;
+			    align-items: center;
+			}
+			.flex-item {
+			}
+	    }
+	    @media (max-width:640px ) {
+	    	.flex-container {
+			    display: flex;
+			    flex-flow: row wrap;
+			    justify-content:space-between;
+			    align-items: flex-start;
+			}
+			.flex-item {
+			}
+			.flex-item4{
+				 order: -1;
+			}
+	    }
+	    .flex-container{
+	    	list-style: none;
+	    	padding: 0px;
+	    	margin: 0px;
+	    }
+	    .flex-item {
+		    background: tomato;
+		    padding: 5px;
+		    width: 150px;
+		    line-height: 150px;
+		    color: white;
+		    font-weight: bold;
+		    font-size: 3em;
+		    text-align: center;
+		}
+    	.flex-item1{
+			height: 120px;
+			line-height: 120px;
+		}
+		.flex-item2{
+			height: 100px;
+			line-height: 100px;
+		}
+		.flex-item3{
+			height: 40px;
+			line-height: 40px;
+		}
+		.flex-item4{
+			height: 200px;
+			line-height: 200px;
+			background: #11456B; 
+		}
+    </style>
+</head>
+<body>
+		
+    <ul class="flex-container">
+        <li class="flex-item flex-item1">1</li>
+        <li class="flex-item flex-item2">2</li>
+        <li class="flex-item flex-item3">3</li>
+        <li class="flex-item flex-item4">4</li>
+    </ul>
+
+</body>
+</html>
