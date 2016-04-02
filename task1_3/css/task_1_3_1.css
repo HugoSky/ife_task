@@ -1,0 +1,61 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: Microsoft Yahei;
+}
+.p{
+	padding: 20px;
+}
+.m{
+	margin: 20px;
+}
+.b{
+	border:solid 1px #999;
+}
+
+.bk{
+	background-color: #fff;
+}
+.container{
+	background-color: #eee;
+}
+.left{
+	width:200px;
+	float: left;
+	box-sizing: border-box;
+}
+.left img{
+	position:relative;
+}
+.logo{
+
+	position: absolute;
+	left:155px;
+	top : 65px;
+	font-weight: bold;
+	font-size: 25px;
+	
+}
+.middle{
+	margin-left: 240px;
+	margin-right: 160px;
+	
+}
+.introduce{
+	white-space: pre-line;
+	line-height: 30px;
+	font-size: 1em;
+	text-indent: 2em;
+}
+.right{
+	width: 120px;
+	float: right;
+	box-sizing: border-box;
+
+}
+.right img{
+	margin-bottom: 15px;
+}
+.right img:last-child{
+	margin-bottom: 0;
+}
