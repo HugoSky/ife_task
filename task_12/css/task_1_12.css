@@ -1,0 +1,135 @@
+*{
+			padding: 0px;
+			margin: 0px;
+		}
+		table{
+			 
+		}
+		td{
+			text-align: center;
+		}
+		.colgroup:first-child{
+			width: 20%;
+		}
+		.colgroup:nth-child(2){
+			width: 50%;
+		}
+		.colgroup:last-child{
+			width: 30%;
+		}
+		.table-head td{
+			border: none;
+		}
+		.table-head tr th{
+			background: #000000;
+			color: #FFFFFF;
+		}
+		.table-body tr:nth-child(even){
+			background: #EEEDD7;
+		}
+		.table-body tr:nth-child(-n+3){
+			color: red;
+		}
+		#in{
+			margin: 30px;
+			width: 150px;
+			/*firefox*/
+			-moz-transition: width 500ms;
+			/*chrome*/ 
+			-webkit-transition: width 500ms;
+			/*opera*/ 
+			-o-transition: width 500ms;
+			transition: width 500ms;
+		}
+		#in:focus{
+			width: 300px;
+		}
+		.container{
+			width: 200px;
+			overflow: hidden;
+			position: relative;
+		}
+		.slider{
+			position: relative;
+			width: 300%;
+			list-style: none;
+			display: flex;
+			left: 0px;
+			transition: left 500ms; 
+			animation: slide-first 5s  infinite;
+			-webkit-animation: slide-first 5s  infinite;
+		}
+		.slider-child{
+			
+		}
+		@keyframes slide-first{
+			0%{ left: 0px;}
+			25%{ left: 0px;}
+		    30%{ left: -200px;}
+		    55%{ left: -200px;}		    
+		    60% { left: -400px;}
+		    85% {left: -400px;}
+		}
+		@keyframes slide-second{
+			0%{ left: -200px;}
+			25%{ left: -200px;}
+		    30%{ left: -400px;}
+		    55%{ left: -400px;}		    
+		    60% { left: 0px;}
+		    85% {left: 0px;}
+		}
+		@keyframes slide-third{
+			0%{ left: -400px;}
+			25%{ left: -400px;}
+		    30%{ left: 0px;}
+		    55%{ left: 0px;}		    
+		    60% { left: -200px;}
+		    85% {left: -200px;}
+		}
+		.slider-child{
+			width: 200px;
+			height: 100px;
+			display: inline-block;
+		}
+		.slider-child:nth-child(1){
+			background: indianred;
+		}
+		.slider-child:nth-child(2){
+			background: greenyellow;
+		}
+		.slider-child:nth-child(3){
+			background: cornflowerblue;
+		}
+		.controller{
+			position: absolute;
+			bottom: 0px;
+			height: 30px;
+			width: 100px;
+			left: 100px;
+			z-index: 1;
+		}
+		.controller a{
+			display: inline-block;
+			text-decoration: none;
+			text-align: center;
+			line-height: 30px;
+			width: 30px;
+			height: 30px;
+			color: #FFFFFF;
+			background: #11456B;
+		}
+		#first:target~ .slider{
+			left: 0;
+			animation: slide-first 5s  infinite;
+			-webkit-animation: slide-first 5s  infinite;
+		}
+		#second:target~ .slider{
+			left: -200px;
+			animation: slide-second 5s  infinite;
+			-webkit-animation: slide-second 5s  infinite;
+		}
+		#third:target~ .slider{
+			left: -400px;
+			animation: slide-third 5s  infinite;
+			-webkit-animation: slide-third 5s  infinite;
+		}
