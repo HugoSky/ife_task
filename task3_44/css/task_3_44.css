@@ -1,0 +1,47 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	padding:  16px 8px;
+}
+.waterfall{
+	width: 100%;
+}
+.column{
+	padding: 0px 8px;
+	width: 24.3%;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	min-width: 200px;
+	/*border: 1px solid #FFA07A;*/
+}
+img{
+	width: 100%;
+	cursor: pointer;
+}
+.cover{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 100;
+	display: none;
+}
+.active{
+	background: rgba(0,0,0,.7);
+	display: block;
+}
+.img-box{
+	margin: 50px auto;
+}
+.img-large{
+}
+img{
+	border-radius: 5px;
+	transition: all 0.3s;
+	box-shadow: 0 0 10px rgba(0,0,0,.6);
+	margin: 5px 0px;
+}
