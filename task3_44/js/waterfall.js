@@ -11,7 +11,6 @@ waterFall.prototype = {
 		}
 		$('#waterfall').innerHTML+=str;
 		this.columns = $('#waterfall').querySelectorAll('.column');
-		console.log(this.columns);
 	},
 	getRandomUrls : function(){
 		var height,i,whArr=[];
@@ -35,15 +34,11 @@ waterFall.prototype = {
 	getLowestColumn : function(){
 		var lowest = this.columns[0];
 		for (i = 1; i < this.columns.length; i++) {
-			console.log(getComputedStyle(this.columns[i],null).height+'///'+getComputedStyle(lowest,null).height);
 			if(parseInt(getComputedStyle(this.columns[i],null).height)
 				< parseInt(getComputedStyle(lowest,null).height)){
 				lowest = this.columns[i];
 			}
 		}
-		console.log('结果');
-		console.log(getComputedStyle(lowest,null).height);
-		console.log('-----------------');
 		return lowest;
 	}
 }
