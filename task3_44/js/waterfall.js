@@ -4,7 +4,7 @@ var waterFall = function(columnNum){
 }
 waterFall.prototype = {
 	render : function(){
-		var width = Math.floor($('#waterfall').clientWidth/this.columnNum-10),
+		var width = $('#waterfall').clientWidth/this.columnNum,
 			i,str='';
 		for(i = 1;i <= this.columnNum;i++){
 			str += '<div class="column" id="column'+i+'" style="width:'+width+'px;"></div>';
