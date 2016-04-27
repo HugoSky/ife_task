@@ -1,14 +1,14 @@
- var CastLayout = function(){
+ var castLayout = function(){
 	this.clientWidth = 0
 	this.container = document.querySelector('.container')
 	this.minHeght = 300
 	this.photos = []
 	this.init()
 }
-CastLayout.prototype.init = function(){
+castLayout.prototype.init = function(){
 	this.clientWidth = this.container.clientWidth
 }
-CastLayout.prototype.insertPhotos = function(photos){
+castLayout.prototype.insertPhotos = function(photos){
 	//如果上次有剩余图片  则将图片放入最新的队列的头部
 	photos = photos.concat(this.photos)
 	//存储相对宽度值  当超过容器宽度时 就返回之前的图片
@@ -25,7 +25,7 @@ CastLayout.prototype.insertPhotos = function(photos){
 	//将剩余的照片添加到this.photos
 	this.photos = this.photos.concat(photos)
 }
-CastLayout.prototype.append = function(rowPhotos,scale){
+castLayout.prototype.append = function(rowPhotos,scale){
 	var height = 300/scale,
 	row = document.createElement('div'),
 	str = '';
