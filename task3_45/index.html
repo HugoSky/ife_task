@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>任务四十五：多功能相册之木桶布局</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+	body{
+		overflow-y: scroll;
+	}
+	.container{
+	}
+	.container-row{
+		white-space: nowrap;
+		margin-bottom: 8px;
+		overflow: hidden
+	}
+	.row-item{
+		height: 100%;
+		display: inline-block;
+		box-sizing: border-box;
+		padding-left: 8px;
+	}
+	img{
+		height: 100%;
+		padding-left: 8px;
+		cursor: pointer;
+	}
+	.img-wrapper{
+		box-sizing: border-box;
+		display: inline-block;
+		height: 100%;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+ 	</div>
+ <script src="js/app.js"></script>
+ <script src="js/castLayout.js"></script>
+ <script type="text/javascript">
+ 	new App(new CastLayout())
+ </script>
+</body>
+</html>
